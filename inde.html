@@ -1,182 +1,319 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Título de la Página</title>
     <!-- Enlaces a archivos CSS -->
-    <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialize.css" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
     <!-- Otros elementos del encabezado aquí -->
-</head>
-<body>
+  </head>
+  <body>
     <!-- En el encabezado de tu página -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- Encabezado -->
     <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo">Logo</a>
-            <!-- En el cuerpo de tu página -->
-<ul class="right hide-on-med-and-down">
-    <li><a href="#" class="modal-trigger" data-target="enlace-modal">Enlace</a></li>
-    <li><a href="#" class="modal-trigger" data-target="informacion-modal">Información</a></li>
-    <li><a href="#" class="modal-trigger" data-target="acerca-de-modal">Acerca De</a></li>
-    <li><a href="#features">Características</a></li>
-</ul>
-<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menú</i></a>
-<ul id="nav-mobile" class="sidenav">
-    <li><a href="#" class="modal-trigger" data-target="enlace-modal">Enlace</a></li>
-    <li><a href="#" class="modal-trigger" data-target="informacion-modal">Información</a></li>
-    <li><a href="#" class="modal-trigger" data-target="acerca-de-modal">Acerca De</a></li>
-    <li><a href="#features">Características</a></li>
-</ul>
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <!-- En el cuerpo de tu página -->
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="#" class="modal-trigger" data-target="enlace-modal"
+              >Enlace</a
+            >
+          </li>
+          <li>
+            <a href="#" class="modal-trigger" data-target="informacion-modal"
+              >Información</a
+            >
+          </li>
+          <li>
+            <a href="#" class="modal-trigger" data-target="acerca-de-modal"
+              >Acerca De</a
+            >
+          </li>
+          <li><a href="#features">Características</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menú</i></a
+        >
+        <ul id="nav-mobile" class="sidenav">
+          <li>
+            <a href="#" class="modal-trigger" data-target="enlace-modal"
+              >Enlace</a
+            >
+          </li>
+          <li>
+            <a href="#" class="modal-trigger" data-target="informacion-modal"
+              >Información</a
+            >
+          </li>
+          <li>
+            <a href="#" class="modal-trigger" data-target="acerca-de-modal"
+              >Acerca De</a
+            >
+          </li>
+          <li><a href="#features">Características</a></li>
+        </ul>
 
-<!-- Modales con contenido pequeño -->
-<div id="enlace-modal" class="modal">
-    <div class="modal-content">
-        <h4>Contenido del Enlace</h4>
-        <p>Contenido del modal para el enlace.</p>
-    </div>
-    <div class="modal-footer">
-        <a href="#" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
-    </div>
-</div>
-
-<div id="informacion-modal" class="modal">
-    <div class="modal-content">
-        <h4>Contenido de la Información</h4>
-        <p>Contenido del modal para la información.</p>
-    </div>
-    <div class="modal-footer">
-        <a href="#" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
-    </div>
-</div>
-
-<div id="acerca-de-modal" class="modal">
-    <div class="modal-content">
-        <h4>Contenido Acerca De</h4>
-        <p>Contenido del modal para Acerca De.</p>
-    </div>
-    <div class="modal-footer">
-        <a href="#" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
-    </div>
-</div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var modals = document.querySelectorAll('.modal');
-        M.Modal.init(modals);
-    });
-</script>
-
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menú</i></a>
+        <!-- Modales con contenido pequeño -->
+        <div id="enlace-modal" class="modal">
+          <div class="modal-content">
+            <h4>Contenido del Enlace</h4>
+            <p>Contenido del modal para el enlace.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="modal-close waves-effect waves-green btn-flat"
+              >Cerrar</a
+            >
+          </div>
         </div>
+
+        <div id="informacion-modal" class="modal">
+          <div class="modal-content">
+            <h4>Contenido de la Información</h4>
+            <p>Contenido del modal para la información.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="modal-close waves-effect waves-green btn-flat"
+              >Cerrar</a
+            >
+          </div>
+        </div>
+
+        <div id="acerca-de-modal" class="modal">
+          <div class="modal-content">
+            <h4>Contenido Acerca De</h4>
+            <p>Contenido del modal para Acerca De.</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="modal-close waves-effect waves-green btn-flat"
+              >Cerrar</a
+            >
+          </div>
+        </div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var modals = document.querySelectorAll(".modal");
+            M.Modal.init(modals);
+          });
+        </script>
+
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menú</i></a
+        >
+      </div>
     </nav>
 
     <!-- Contenido Principal -->
     <div class="section no-pad-bot" id="index-banner">
-        <div class="container">
-            <br>
-            <h1 class="header center orange-text">Comienza con los Juegos</h1>
-            <div class="row center">
-                <h5 class="header col s12 light">¡Experimenta lo mejor de los juego gratis para pc o movil!</h5>
-            </div>
-            <div class="row center">
-                <a href="https://www.malavida.com/es/windows/" id="download-button" class="btn-large waves-effect waves-light orange">
-                    Comenzar
-                </a>
-            </div>
-            <br><br>
+      <div class="container">
+        <br />
+        <h1 class="header center orange-text">Comienza con los Juegos</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">
+            ¡Experimenta lo mejor de los juego gratis para pc o movil!
+          </h5>
         </div>
+        <div class="row center">
+          <a
+            href="https://www.malavida.com/es/windows/"
+            id="download-button"
+            class="btn-large waves-effect waves-light orange"
+          >
+            Comenzar
+          </a>
+        </div>
+        <br /><br />
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="center-align">Galería Battle Royal</h2>
+      <div class="row">
+        <!-- Battle Royal -->
+        <div class="col s4 m4 l4">
+          <img
+            src="https://th.bing.com/th/id/R.a8a27bd02d4a4e7173ce582fed3c132e?rik=HPLVSqm0QnmzQg&pid=ImgRaw&r=0"
+            alt="Game1"
+            class="responsive-img"
+          />
+        </div>
+        <div class="col s4 m4 l4">
+          <img
+            src="https://th.bing.com/th/id/OIP.3msg1rwHiDXktN2IgUyQugHaEK?pid=ImgDet&w=474&h=266&rs=1"
+            alt="Game1"
+            class="responsive-img"
+          />
+        </div>
+        <div class="col s4 m4 l4">
+          <img
+            src="https://th.bing.com/th/id/OIP.VerhR8wSvmPcBhsWguAw9AHaEK?pid=ImgDet&w=474&h=266&rs=1"
+            alt="Game1"
+            class="responsive-img"
+          />
+        </div>
+      </div>
+      <!-- Segunda fila -->
+      <div class="row">
+        <div class="col s4 m4 l4">
+          <img
+            src="https://th.bing.com/th/id/OIP.rD25E2rFmCSMztHe5JPaJgHaEK?w=1200&h=675&rs=1&pid=ImgDetMain"
+            alt="Game1"
+            class="responsive-img"
+          />
+        </div>
+        <div class="col s4 m4 l4">
+          <img
+            src="https://ink.mostepic.win/content/images/2018/03/fornitemorepopularthanpubg.jpg"
+            alt="Game1"
+            class="responsive-img"
+          />
+        </div>
+        <div class="col s4 m4 l4">
+          <img
+            src="https://cosmo-games.com/wp-content/uploads/2018/02/PUBG-Vs-Fortnite-le-duel-qui-l-emporte.jpg"
+            alt="Game1"
+            class="responsive-img"
+          />
+        </div>
+      </div>
+      <!-- Tercera fila -->
+      <div class="row">
+        <!-- Aventura -->
+        <div class="col s4 m4 l4">
+          <img
+            src="https://3.bp.blogspot.com/-i5KFMTRUGYY/XDZfeo2-uUI/AAAAAAAANFw/2zX7kLr8CAIFgwxZVPN_y6irApXG9akuQCLcBGAs/s1600/Uncharted-4-A-Thiefs-End-HD-Wallpaper.jpg"
+            alt="Game1"
+            class="responsive-img"
+          />
+        </div>
+        <div class="col s4 m4 l4">
+          <img
+            src="https://www.tecnopunta.es/fotos/42/14257_whatsappimage2020-06-22at13-05-55-2.jpeg"
+            alt="Game1"
+            class="responsive-img"
+          />
+        </div>
+
+        <!-- Cuarta fila (Imágenes más grandes en la misma fila) -->
+        <div class="col s6 m6 l6">
+          <img
+            src="https://officialpsds.com/imageview/r8/mq/r8mq4x_large.png?1521316491"
+            alt="Game1"
+            class="responsive-img"
+          />
+        </div>
+        <div class="col s6 m6 l6">
+          <img
+            src="https://i.pinimg.com/originals/d5/f5/98/d5f59888dbaba11fbffbd883a70473e4.jpg"
+            alt="Game1"
+            class="responsive-img"
+          />
+        </div>
+      </div>
     </div>
 
     <!-- Sección de características -->
     <div class="container">
-        <div class="section">
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons" style="vertical-align: middle;"></i> Battler Royal</h2>
-                        <p class="light">
-                            Explora nuestra exclusiva selección de juegos diseñados
-                             con los elementos más emocionantes y mecánicas innovadoras
-                              que deleitarán tu entusiasmo. Cada título está cuidadosamente
-                               desarrollado para ofrecerte una experiencia de juego inolvidable.
-                        </p>
-                    </div>
-                </div>
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons"></i> Aventuras</h2>
-                        <p class="light">
-                            
-                            Embárcate en una emocionante aventura en un entorno cálido y acogedor,
-                             donde la atención al detalle y el servicio excepcional se combinan para
-                              crear momentos perfectos. Ya sea enfrentando desafíos en solitario
-                               o formando un equipo con amigos, nuestro mundo de juegos es el lugar
-                                ideal para disfrutar de experiencias emocionantes.
-                        </p>
-                    </div>
-                </div>
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons"></i> Comunidad creativa</h2>
-                        <p class="light">
-                            Sumérgete en la comunidad creativa de juegos con nuestra selección
-                             de títulos únicos y mecánicas innovadoras. Nuestros desarrolladores
-                              expertos han creado experiencias innovadoras que complementarán
-                               perfectamente tu travesía en el mundo de los juegos.
-                        </p>
-                    </div>
-                </div>
+      <div class="section">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons" style="vertical-align: middle"></i>
+                Battler Royal
+              </h2>
+              <p class="light">
+                Explora nuestra exclusiva selección de juegos diseñados con los
+                elementos más emocionantes y mecánicas innovadoras que
+                deleitarán tu entusiasmo. Cada título está cuidadosamente
+                desarrollado para ofrecerte una experiencia de juego
+                inolvidable.
+              </p>
             </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons"></i> Aventuras
+              </h2>
+              <p class="light">
+                Embárcate en una emocionante aventura en un entorno cálido y
+                acogedor, donde la atención al detalle y el servicio excepcional
+                se combinan para crear momentos perfectos. Ya sea enfrentando
+                desafíos en solitario o formando un equipo con amigos, nuestro
+                mundo de juegos es el lugar ideal para disfrutar de experiencias
+                emocionantes.
+              </p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <h2 class="center light-blue-text">
+                <i class="material-icons"></i> Comunidad creativa
+              </h2>
+              <p class="light">
+                Sumérgete en la comunidad creativa de juegos con nuestra
+                selección de títulos únicos y mecánicas innovadoras. Nuestros
+                desarrolladores expertos han creado experiencias innovadoras que
+                complementarán perfectamente tu travesía en el mundo de los
+                juegos.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Pie de Página -->
     <footer class="page-footer orange">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Sobre Nosotros</h5>
+            <p class="grey-text text-lighten-4">
+              En nuestra página de juegos, nos apasiona ofrecer experiencias de
+              alta calidad y memorables a nuestra comunidad de jugadores.
+              Nuestro equipo de desarrolladores expertos se esfuerza por crear
+              títulos emocionantes y auténticos que reflejen nuestra dedicación
+              a la excelencia en el mundo de los videojuegos.
+            </p>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Categorias</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Battler Royal</a></li>
+              <li><a class="white-text" href="#!">Aventura</a></li>
+              <li><a class="white-text" href="#!">Arcade</a></li>
+              <li><a class="white-text" href="#!">Racing</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Contacto</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Dirección</a></li>
+              <li><a class="white-text" href="#!">Teléfono</a></li>
+              <li><a class="white-text" href="#!">Correo electrónico</a></li>
+              <li><a class="white-text" href="#!">Descarga en linea</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
         <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Sobre Nosotros</h5>
-                    <p class="grey-text text-lighten-4">
-                        En nuestra página de juegos, nos apasiona ofrecer experiencias de alta calidad
-                         y memorables a nuestra comunidad de jugadores. Nuestro equipo de desarrolladores
-                          expertos se esfuerza por crear títulos emocionantes y auténticos que reflejen
-                           nuestra dedicación a la excelencia en el mundo de los videojuegos.
-                    </p>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Categorias</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Battler Royal</a></li>
-                        <li><a class="white-text" href="#!">Aventura</a></li>
-                        <li><a class="white-text" href="#!">Arcade</a></li>
-                        <li><a class="white-text" href="#!">Racing</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Contacto</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Dirección</a></li>
-                        <li><a class="white-text" href="#!">Teléfono</a></li>
-                        <li><a class="white-text" href="#!">Correo electrónico</a></li>
-                        <li><a class="white-text" href="#!">Descarga en linea</a></li>
-                    </ul>
-                </div>
-            </div>
+          Diseñado por
+          <a class="orange-text text-lighten-3" href="#">Kenny Tellez</a>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                Diseñado por <a class="orange-text text-lighten-3" href="#">Kenny Tellez</a>
-            </div>
-        </div>
+      </div>
     </footer>
 
     <!-- Archivos JavaScript -->
     <script src="script.js"></script>
     <!-- Otros scripts o enlaces a bibliotecas JavaScript aquí -->
-</body>
+  </body>
 </html>
